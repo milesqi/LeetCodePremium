@@ -121,10 +121,10 @@
         <div>
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation"><a href="#allquestion" aria-controls="allquestion" role="tab"
+            <li role="presentation" class="active"><a href="#allquestion" aria-controls="allquestion" role="tab"
                                        data-toggle="tab">All Questions</a>
             </li>
-            <li role="presentation" class="active"><a href="#premium" aria-controls="premium" role="tab"
+            <li role="presentation"><a href="#premium" aria-controls="premium" role="tab"
                                                       data-toggle="tab"><i class="fas fa-unlock-alt"></i> Premium</a>
             </li>
           </ul>
@@ -132,7 +132,7 @@
           <!-- Tab panes -->
           <div class="tab-content">
 
-            <div role="tabpanel" class="tab-pane " id="allquestion">
+            <div role="tabpanel" class="tab-pane active" id="allquestion">
               <table id="example1" class="table table-striped table-bordered" cellspacing="0" width="100%">
                 <thead>
                 <tr>
@@ -21572,7 +21572,7 @@
               </table>
             </div>
 
-            <div role="tabpanel" class="tab-pane active" id="premium">
+            <div role="tabpanel" class="tab-pane" id="premium">
               <table id="example2" class="table table-striped table-bordered" cellspacing="0" width="100%">
                 <thead>
                 <tr>
@@ -27495,6 +27495,7 @@
 
   <script>
       $(document).ready(function () {
+	  return;
           $('#example1').DataTable({
               responsive: {
                   details: {
